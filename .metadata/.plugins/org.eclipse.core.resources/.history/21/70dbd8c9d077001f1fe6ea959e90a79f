@@ -1,0 +1,5 @@
+package com.project.cars.repositories;
+
+public class CarsRepository {
+
+}

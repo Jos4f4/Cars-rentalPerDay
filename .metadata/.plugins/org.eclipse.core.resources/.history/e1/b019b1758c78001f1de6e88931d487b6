@@ -1,0 +1,14 @@
+spring.application.name=cars-apigatewayZuul
+server.port=8765
+
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
+ribbon.ConnectTimeout=10000
+ribbon.ReadTimeout=20000
+
+zuul.routes.cars.service-id=cars
+zuul.routes.cars.path=/cars/**
+
+zuul.routes.cars-rentalday.service-id=carsrentalday
+zuul.routes.cars-rentalday.path=/carsrentalday/**

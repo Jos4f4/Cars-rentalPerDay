@@ -1,0 +1,31 @@
+package com.project.carsrentalday.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.project.carsrentalday.entities.Cars;
+import com.project.carsrentalday.entities.Payments;
+import com.project.carsrentalday.feignclients.CarsFeignClient;
+
+@Service
+public class PaymentsService {
+	
+	//@Value("${books.host}")
+	//private String booksHost;
+
+	//@Autowired
+	//private RestTemplate restTemplate;
+	
+	@Autowired
+	private CarsFeignClient carsFeignClient;
+	
+	public Payments getPayment(long carsId, int days) {
+		//return new Payment("MARCA", "MODELO", "COR", "PLACA", 10.0, days);
+		
+		//Map<String, String> uriVariables = new HashMap<>();
+		//uriVariables.put("id", ""+carsId);
+		
+		Cars cars = carsFeignClient.findById(carsId).getBody();
+		return new Payments(cars.getMarca(), cars.getModelo(), cars.getCor(), cars.getPlaca(), cars.getRentalDay(), days);
+	}
+}

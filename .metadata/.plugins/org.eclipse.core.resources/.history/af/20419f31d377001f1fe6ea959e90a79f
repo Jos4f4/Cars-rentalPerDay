@@ -1,0 +1,5 @@
+package com.project.carsrentalday.entities;
+
+public class Payments {
+
+}

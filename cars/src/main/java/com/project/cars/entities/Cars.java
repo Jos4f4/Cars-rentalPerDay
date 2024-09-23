@@ -8,8 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 @Entity
 @Table(name = "tb_cars")
+@JsonPropertyOrder({"id", "marca", "modelo", "cor", "placa", "rentalday"})
 public class Cars implements Serializable {
 
 	private static final long serialVersionUID = 1L;

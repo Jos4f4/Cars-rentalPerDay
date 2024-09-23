@@ -11,6 +11,10 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.project.carsrentalday.entities.Payment;
 import com.project.carsrentalday.services.PaymentService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Cars-RenatlDay endpoint")
 @RestController
 @RequestMapping(value = "/payments")
 public class PaymentResource {
@@ -18,6 +22,7 @@ public class PaymentResource {
 	@Autowired
 	private PaymentService service;
 	
+	@Operation(summary = "Payments Operation")
 	@HystrixCommand(fallbackMethod = "getPaymentAlternative")
 	@GetMapping(value = "/{carsId}/days/{days}")
 	public ResponseEntity<Payment> getPayment(@PathVariable Long carsId, @PathVariable Integer days){

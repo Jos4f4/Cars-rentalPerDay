@@ -1,0 +1,45 @@
+package 
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springdoc.core.GroupedOpenApi;
+import org.springdoc.core.SwaggerUiConfigParameters;
+import org.springframework.cloud.gateway.route.RouteDefinitionLocator;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+
+@Configuration
+public class OpenApiConfiguration {
+    
+    @Bean
+    @Lazy(false)
+    public List<GroupedOpenApi> apis(
+            SwaggerUiConfigParameters config,
+            RouteDefinitionLocator locator) {
+        
+        // Coletando as definições de rota e bloqueando a execução até que sejam obtidas
+        List<RouteDefinition> definitions = locator.getRouteDefinitions()
+            .collectList()
+            .block();
+        
+        // Verificando se as definições não são nulas
+        if (definitions == null) {
+            return List.of(); // Retorna uma lista vazia se não houver definições
+        }
+
+        // Criando a lista de GroupedOpenApi
+        return definitions.stream()
+            .filter(routeDefinition -> routeDefinition.getId().matches(".*-service"))
+            .map(routeDefinition -> {
+                String name = routeDefinition.getId();
+                config.addGroup(name);
+                return GroupedOpenApi.builder()
+                    .pathsToMatch("/" + name + "/**")
+                    .group(name)
+                    .build();
+            })
+            .collect(Collectors.toList());
+    }
+}

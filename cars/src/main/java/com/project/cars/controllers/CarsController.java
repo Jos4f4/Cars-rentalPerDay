@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.project.cars.entities.Cars;
 import com.project.cars.resources.CarsResource;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Cars endpoint")
 @RestController
 @RequestMapping("/cars")
 public class CarsController{
@@ -21,6 +25,7 @@ public class CarsController{
 		private CarsResource service;
 		///private PersonServices service = new PersonServices();
 		
+		@Operation(summary = "Find a specific car by ID")
 		@RequestMapping(method=RequestMethod.GET,
 				produces = MediaType.APPLICATION_JSON_VALUE)
 		public List<Cars> findAll() {

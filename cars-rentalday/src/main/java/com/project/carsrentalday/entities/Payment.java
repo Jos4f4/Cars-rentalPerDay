@@ -71,11 +71,11 @@ public class Payment implements Serializable {
 		return days;
 	}
 
-	public void setDays(Integer days) {
-		this.days = days;
+	public void setDays(Integer days) {	
+			this.days = days;
 	}
 
 	public Double getTotal() {
-		return days * rentalday;
+		return days * rentalday + (rentalday*20/100);
 	}
 }

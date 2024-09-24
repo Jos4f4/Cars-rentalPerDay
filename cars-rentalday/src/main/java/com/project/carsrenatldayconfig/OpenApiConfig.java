@@ -10,7 +10,7 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.License;
 
 @OpenAPIDefinition(info =
-@Info(title = "Cars-RentalDay Project",
+@Info(title = "Cars RentalDay Project",
 		version  = "v1",
 		description = "Documentation of payment cars"))
 @Configuration
@@ -22,14 +22,14 @@ public class OpenApiConfig{
 			.components(new Components())
 			.info(
 				new io.swagger.v3.oas.models.info.Info()
-				.title("Cars-RentalDay Project")
+				.title("Cars RentalDay Project")
 				.version("v1")
-				.description("Project Cars - Microservice")
-				.termsOfService("https://pub.erudio.com.br/meus-cursos")
+				.description("Documentation of payment cars")
+				.termsOfService("https://pub.erudio.com.br/meus-cursoshtp")
 				.license(
 					new License()
-						.name("Apache 2.0")
-						.url("https://pub.erudio.com.br/microservices")
+						.name("Apache 2.0.1")
+						.url("https://pub.erudio.com.br/microserviceshtp")
 				)
 			);
 	}

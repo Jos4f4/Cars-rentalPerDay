@@ -24,7 +24,7 @@ public class OpenApiConfig{
 				new io.swagger.v3.oas.models.info.Info()
 				.title("Cars Project")
 				.version("v1")
-				.description("Project Cars - Microservice")
+				.description("Documentation of cars")
 				.termsOfService("https://pub.erudio.com.br/meus-cursos")
 				.license(
 					new License()

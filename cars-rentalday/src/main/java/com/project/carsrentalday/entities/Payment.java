@@ -76,6 +76,9 @@ public class Payment implements Serializable {
 	}
 
 	public Double getTotal() {
+		if(days<=0) {
+			return days * rentalday * 0;
+		}
 		return days * rentalday + (rentalday*20/100);
 	}
 }

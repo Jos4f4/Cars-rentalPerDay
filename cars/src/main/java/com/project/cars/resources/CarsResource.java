@@ -104,6 +104,3 @@ public class CarsResource {
 		repository.delete(entity);
 	}
 }
-
-
-

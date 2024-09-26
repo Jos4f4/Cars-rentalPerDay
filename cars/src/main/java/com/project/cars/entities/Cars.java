@@ -2,6 +2,7 @@ package com.project.cars.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,6 +22,8 @@ public class Cars implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String marca;
+	
+	@Column(unique = true)
 	private String modelo;
 	private String cor;
 	private String placa;

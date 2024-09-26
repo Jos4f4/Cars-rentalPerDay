@@ -29,4 +29,3 @@ public class PaymentService {
 		return new Payment(cars.getMarca(), cars.getModelo(), cars.getCor(), cars.getPlaca(), cars.getRentalDay(), days);
 	}
 }
-

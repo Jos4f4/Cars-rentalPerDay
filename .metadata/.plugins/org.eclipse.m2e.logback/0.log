@@ -954,3 +954,86 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:s
 2024-09-24 01:38:11,937 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2024-09-24 01:38:11,943 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-09-24 01:38:11,943 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 15:13:47,111 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-24 15:15:59,682 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:15:59,692 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:15:59,711 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 15:15:59,720 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:15:59,720 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 15:17:26,944 [Worker-1: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:17:26,947 [Worker-1: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:17:26,951 [Worker-1: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 15:17:26,955 [Worker-1: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:17:26,955 [Worker-1: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 15:21:34,243 [Worker-2: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:21:34,244 [Worker-2: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:21:34,267 [Worker-2: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:21:34,274 [Worker-2: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:21:34,274 [Worker-2: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars\src\test\resources
+2024-09-24 15:22:08,174 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:22:08,176 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:22:08,178 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:22:08,183 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:22:08,183 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars\src\test\resources
+2024-09-24 15:27:32,068 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:27:32,069 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:27:32,071 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 15:27:32,075 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:27:32,075 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 15:29:21,123 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:29:21,124 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:29:21,126 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 15:29:21,131 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:29:21,132 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 15:50:39,927 [Worker-22: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:50:39,928 [Worker-22: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:50:39,929 [Worker-22: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 15:50:39,931 [Worker-22: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:50:39,931 [Worker-22: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 15:52:03,585 [Worker-25: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:52:03,586 [Worker-25: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 15:52:03,587 [Worker-25: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 15:52:03,592 [Worker-25: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 15:52:03,592 [Worker-25: Launching cars-rentalday - CarsRentaldayApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 16:03:20,035 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:20,036 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 16:03:20,039 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 16:03:20,045 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:20,046 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars\src\test\resources
+2024-09-24 16:03:20,652 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:20,652 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 16:03:20,690 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 16:03:20,697 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:20,698 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-apigatewayZuul\src\test\resources
+2024-09-24 16:03:21,186 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:21,186 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 16:03:21,206 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 16:03:21,215 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:21,215 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-eurekaServer\src\test\resources
+2024-09-24 16:03:21,568 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:21,569 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-24 16:03:21,571 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-24 16:03:21,576 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-24 16:03:21,576 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-24 19:24:44,670 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-26 02:27:52,780 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-26 02:28:54,410 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:28:54,415 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-26 02:28:54,435 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-26 02:28:54,441 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:28:54,442 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars\src\test\resources
+2024-09-26 02:33:25,156 [Worker-13: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:33:25,159 [Worker-13: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-26 02:33:25,162 [Worker-13: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-26 02:33:25,166 [Worker-13: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:33:25,167 [Worker-13: Launching cars - CarsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars\src\test\resources
+2024-09-26 02:38:57,141 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:38:57,141 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-26 02:38:57,158 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-26 02:38:57,164 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:38:57,164 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources
+2024-09-26 02:39:16,836 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:39:16,839 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-09-26 02:39:16,841 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-09-26 02:39:16,843 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-09-26 02:39:16,843 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory J:\Projetos\Cars-rentalPerDay\cars-rentalday\src\test\resources

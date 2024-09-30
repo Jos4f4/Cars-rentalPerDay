@@ -1,5 +1,0 @@
-package com.project.cars.repositories;
-
-public interface CarsRepository implements JpaRepository<Cars, Long> {
-
-}

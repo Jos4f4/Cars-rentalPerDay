@@ -23,7 +23,7 @@ public class CarsController{
 
 		@Autowired
 		private CarsResource service;
-		///private PersonServices service = new PersonServices();
+		///private CarsResource service = new PersonCarsResource();
 		
 		@Operation(summary = "Find all cars")
 		@RequestMapping(method=RequestMethod.GET,

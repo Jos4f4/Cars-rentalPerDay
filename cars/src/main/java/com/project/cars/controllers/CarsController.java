@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.cars.entities.Cars;
-import com.project.cars.resources.CarsService;
+import com.project.cars.services.CarsService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

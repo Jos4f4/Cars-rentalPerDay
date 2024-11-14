@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.project.carsrentalday.entities.Payment;
-import com.project.carsrentalday.services.PaymentService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -20,7 +19,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class PaymentResource {
 	
 	@Autowired
-	private PaymentService service;
+	private PaymentServiceFeign service;
 	
 	@Operation(summary = "Payment = days * rentalday + ((rentalday*20/100)*days")
 	@HystrixCommand(fallbackMethod = "getPaymentAlternative")

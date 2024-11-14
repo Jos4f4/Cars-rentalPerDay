@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.cars.entities.Cars;
-import com.project.cars.resources.CarsResource;
+import com.project.cars.resources.CarsService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class CarsController{
 
 		@Autowired
-		private CarsResource service;
+		private CarsService service;
 		///private CarsResource service = new PersonCarsResource();
 		
 		@Operation(summary = "Find all cars")
@@ -63,3 +63,44 @@ public class CarsController{
 			service.delete(id);
 		}
 }
+
+
+/*@RestController
+@RequestMapping(value = "/cars")
+public class CarsController {
+
+		//Balaceamento de carga========
+		private static Logger logger = LoggerFactory.getLogger(CarsResource.class);
+		@Autowired
+		private Environment env;
+		////Balaceamento de carga========
+		
+		@Autowired
+		private CarsRepository repository;
+		
+		@GetMapping
+		public ResponseEntity<List<Cars>> findAll(){
+			List<Cars> list = repository.findAll();
+			return ResponseEntity.ok(list);
+		}
+		
+		@GetMapping(value = "/{id}")
+		public ResponseEntity<Cars> findById(@PathVariable Long id){
+			
+			//Balaceamento de carga========
+			//logger.info("PORT = " + env.getProperty("local.servr.port"));
+			//Balaceamento de carga========
+			
+			try {
+				Thread.sleep(3000L);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			
+			logger.info("PORT = " + env.getProperty("local.server.port"));
+			
+			Cars obj = repository.findById(id).get();
+			return ResponseEntity.ok(obj);
+		}
+}*/

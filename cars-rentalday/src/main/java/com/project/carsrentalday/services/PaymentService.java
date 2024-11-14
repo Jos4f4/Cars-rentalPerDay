@@ -1,31 +1,36 @@
 package com.project.carsrentalday.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.project.carsrentalday.entities.Cars;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.project.carsrentalday.entities.Payment;
-import com.project.carsrentalday.feignclients.CarsFeignClients;
 
-@Service
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Cars-RenatlDay endpoint")
+@RestController
+@RequestMapping(value = "/payments")
 public class PaymentService {
 	
-	//@Value("${cars.host}")
-	//private String carsHost;
-
-	//@Autowired
-	//private RestTemplate restTemplate;
-	
 	@Autowired
-	private CarsFeignClients carsFeignClient;
+	private PaymentServiceFeign service;
 	
-	public Payment getPayment(long carsId, int days) {
-		//return new Payment(("MARCA", "MODELO", "COR", "PLACA", 100.0, 10);
-		
-		//Map<String, String> uriVariables = new HashMap<>();
-		//uriVariables.put("id", ""+carsId);
-		
-		Cars cars = carsFeignClient.findById(carsId).getBody();
-		return new Payment(cars.getMarca(), cars.getModelo(), cars.getCor(), cars.getPlaca(), cars.getRentalDay(), days);
+	@Operation(summary = "Payment = days * rentalday + ((rentalday*20/100)*days")
+	@HystrixCommand(fallbackMethod = "getPaymentAlternative")
+	@GetMapping(value = "/{carsId}/days/{days}")
+	public ResponseEntity<Payment> getPayment(@PathVariable Long carsId, @PathVariable Integer days){
+		Payment payment = service.getPayment(carsId, days);
+		return ResponseEntity.ok(payment);
+	}
+	
+	public ResponseEntity<Payment> getPaymentAlternative(Long carsId, Integer days){
+		Payment payment = new Payment("MARCA", "MODELO", "COR", "PLACA", 10.0, days);
+		return ResponseEntity.ok(payment);
 	}
 }

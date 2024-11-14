@@ -10,49 +10,11 @@ import org.springframework.stereotype.Service;
 import com.project.cars.entities.Cars;
 import com.project.cars.repositories.CarsRepository;
 
-/*@RestController
-@RequestMapping(value = "/cars")
-public class CarsResource {
 
-		//Balaceamento de carga========
-		private static Logger logger = LoggerFactory.getLogger(CarsResource.class);
-		@Autowired
-		private Environment env;
-		////Balaceamento de carga========
-		
-		@Autowired
-		private CarsRepository repository;
-		
-		@GetMapping
-		public ResponseEntity<List<Cars>> findAll(){
-			List<Cars> list = repository.findAll();
-			return ResponseEntity.ok(list);
-		}
-		
-		@GetMapping(value = "/{id}")
-		public ResponseEntity<Cars> findById(@PathVariable Long id){
-			
-			//Balaceamento de carga========
-			//logger.info("PORT = " + env.getProperty("local.servr.port"));
-			//Balaceamento de carga========
-			
-			try {
-				Thread.sleep(3000L);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			
-			
-			logger.info("PORT = " + env.getProperty("local.server.port"));
-			
-			Cars obj = repository.findById(id).get();
-			return ResponseEntity.ok(obj);
-		}
-}*/
 @Service
-public class CarsResource {
+public class CarsService {
 		
-	private Logger logger = LoggerFactory.getLogger(CarsResource.class);
+	private Logger logger = LoggerFactory.getLogger(CarsService.class);
 		
 	@Autowired
 	CarsRepository repository;
